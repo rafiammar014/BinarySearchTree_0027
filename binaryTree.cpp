@@ -12,4 +12,9 @@ public:
         leftchild = nullptr;
         rightchild = nullptr;
     }
+};
+
+class BinaryTree {
+    pucblic:
+    Node *ROOT;
 }
