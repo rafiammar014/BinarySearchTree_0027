@@ -30,4 +30,6 @@ class BinaryTree {
     cin >> x;
     
     Node *newNode = new Node();
+
+    NewNode->info = x;
  }
