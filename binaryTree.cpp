@@ -58,3 +58,17 @@ class BinaryTree {
         return;
     }
  }
+
+ void search(int element, Node *&parent, Node *&currentNode)
+ {
+    parent = nullptr;
+    currentNode = ROOT;
+    while ((currentNode != nullptr) && (currentNode->info != element))
+    {
+        parent = currentNode;
+        if (element < currentNode->info)
+            currentNode = currentNode->leftchild;
+        else
+            currentNode = currentNode->rightchild;
+    }
+ }
